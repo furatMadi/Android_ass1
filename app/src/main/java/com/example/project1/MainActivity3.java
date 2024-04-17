@@ -212,5 +212,4 @@ public class MainActivity3 extends AppCompatActivity {
         }
         resultTxt.setVisibility(View.INVISIBLE);
     }
-    //meow
 }
