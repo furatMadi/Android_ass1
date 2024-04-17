@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UsesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="73dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:padding="8dp">
+
+                <!-- Heading Row -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Uses of Acids"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Uses of Bases"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Data Rows -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Vinegar, used as a preservative." />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Soap and paper manufacturing." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Citric acid in food preservation." />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="NaOH used in rayon manufacture." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Sulphuric acid in batteries." />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Calcium hydroxide for bleaching powder." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Explosives, dyes, paints production." />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Used in painting and decoration mixes." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Phosphoric acid in soft drinks." />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Milk of magnesia as a laxative." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="No direct match" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Ammonium hydroxide in labs." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="No direct match" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Neutralizing soil acidity with lime." />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/finish3Btn"
+            android:layout_width="134dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#CB8367"
+            android:text="finish" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

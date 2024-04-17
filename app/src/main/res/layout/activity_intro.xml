@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6"
+    android:orientation="vertical"
+    tools:context=".IntroActivity">
+
+    <TextView
+        android:id="@+id/introTxt"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="169dp"
+        android:text="Hello young scientists! Today, we are going to embark on an exciting journey into the wonderful world of acids and bases."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/baseTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/baseTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/acid_base_source" />
+
+    <TextView
+        android:id="@+id/acidTxt"
+        android:layout_width="150dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="65dp"
+        android:text="Acids are substances that taste sour and include everyday items like lemon juice and vinegar. Scientifically, an acid can donate a proton or accept an electron pair in reactions."
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/baseTxt"
+        app:layout_constraintEnd_toStartOf="@+id/baseTxt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/baseTxt"
+        android:layout_width="140dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="30dp"
+        android:text="Bases taste bitter and feel slippery, with common examples being soap and baking soda. In chemical terms, bases can accept protons or donate electron pairs."
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/acidTxt"
+        app:layout_constraintTop_toBottomOf="@+id/introTxt" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#CB8367"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baseTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/chooseTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="Select 3 Acids"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/naohBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hclBtn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#CC8467"
+        android:text="HCL"
+        app:layout_constraintBottom_toTopOf="@+id/hno3Btn"
+        app:layout_constraintEnd_toStartOf="@+id/naohBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/naohBtn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="71dp"
+        android:backgroundTint="#CB8367"
+        android:text="NaOH"
+        android:textColorLink="#FF673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/nh4ohBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hclBtn"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTxt" />
+
+    <Button
+        android:id="@+id/hno3Btn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#CC8467"
+        android:text="HNO3"
+        app:layout_constraintBottom_toTopOf="@+id/caoh2Btn"
+        app:layout_constraintEnd_toStartOf="@+id/nh4ohBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hclBtn" />
+
+    <Button
+        android:id="@+id/nh4ohBtn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="71dp"
+        android:backgroundTint="#CC8467"
+        android:text="NH4OH"
+        app:layout_constraintBottom_toTopOf="@+id/h2so4Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hno3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/naohBtn" />
+
+    <Button
+        android:id="@+id/caoh2Btn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="540dp"
+        android:backgroundTint="#CC8467"
+        android:text="Ca(OH)2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/h2so4Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hno3Btn" />
+
+    <Button
+        android:id="@+id/h2so4Btn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#CC8467"
+        android:text="H2SO4"
+        app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caoh2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/nh4ohBtn" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congrats! You Got 0/0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/continueBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#FF0000"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h2so4Btn" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/resultTxt"
+        app:layout_constraintEnd_toEndOf="@+id/resultTxt"
+        app:layout_constraintStart_toStartOf="@+id/resultTxt"
+        app:layout_constraintTop_toBottomOf="@+id/resetBtn" />
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#CC8467"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/resultTxt"
+        app:layout_constraintTop_toBottomOf="@+id/resultTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
